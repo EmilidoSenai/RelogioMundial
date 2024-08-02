@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Mundial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Relógio Mundial</h1>
+        <label for="country">Selecione o país:</label>
+        <select id="country" onchange="showTime()">
+            <option value="America/New_York">Estados Unidos (Nova Iorque)</option>
+            <option value="Europe/London">Reino Unido (Londres)</option>
+            <option value="Europe/Berlin">Alemanha (Berlim)</option>
+            <option value="Asia/Tokyo">Japão (Tóquio)</option>
+            <option value="Australia/Sydney">Australia (Sydney)</option>
+			<option value="America/Saint_Paul">Brasil (São Paulo)</option>
+			<option value="Europe/Paris">França (Paris)</option>
+			<option value="Asia/Seoul">Coréia do Sul (Seul)</option>
+			<option value="Europe/Rome">Itália (Roma)</option>
+			<option value="Europe/Lisbon">Portugal (Lisboa)</option>
+			<option value="Europe/Moscow">Rússia (Moscou)</option>
+			<option value="America/Buenos_Aires">Argentina (Buenos Aires)</option>
+			<option value="Europe/Madrid">Espanha (Madrid)</option>
+			<option value="Asia/Dubai">Emirados Árabes Unidos (Dubai)</option>
+
+			
+            <!-- Add more options as needed -->
+        </select>
+        <div id="timeDisplay"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
